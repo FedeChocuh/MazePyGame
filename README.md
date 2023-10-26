@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 # Readme del Juego de Laberinto
 ### Fernando García A01642285
 ### Federico Castro A01660986
@@ -21,4 +19,3 @@ El juego tiene las siguientes características:
 4. **Dificultad del Laberinto**: La dificultad del laberinto se puede ajustar cambiando la probabilidad de dibujar líneas en direcciones horizontales o verticales.
 
 
->>>>>>> Stashed changes
