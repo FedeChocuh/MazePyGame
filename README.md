@@ -1,4 +1,7 @@
 # Readme del Juego de Laberinto
+### Fernando García A01642285
+### Federico Castro A01660986
+### Diego Zepeda A01026512
 
 ## Introducción
 Juego de laberinto que ocupa la biblioteca de Turtle. El objetivo es moverse de un lado a otro tocando la pantalla. Se proporciona un puntaje dependiendo de la cantidad de veces que el usuario toca la pantalla.

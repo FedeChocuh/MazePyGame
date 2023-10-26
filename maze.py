@@ -1,3 +1,8 @@
+# Made by:
+# Fernando García A01642285
+# Federico Castro A01660986
+# Diego Zepeda A01026512
+
 import pygame
 import sys
 
