@@ -31,8 +31,33 @@ window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 pygame.display.set_caption("Maze Game")
 
 player_pos = [0, 0]
-
 running = True
+game_over = False
+game_won = False
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+        if event.type == pygame.KEYDOWN and not game_over and not game_won:
+            if event.key == pygame.K_UP:
+                if player_pos[0] > 0:
+                    player_pos[0] -= 1
+            elif event.key == pygame.K_DOWN:
+                if player_pos[0] < len(maze) - 1:
+                    player_pos[0] += 1
+            elif event.key == pygame.K_LEFT:
+                if player_pos[1] > 0:
+                    player_pos[1] -= 1
+            elif event.key == pygame.K_RIGHT:
+                if player_pos[1] < len(maze[0]) - 1:
+                    player_pos[1] += 1
+
+            if is_game_over(player_pos):
+                game_over = True
+            if is_game_won(player_pos):
+                game_won = True
+
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
