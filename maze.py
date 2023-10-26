@@ -47,7 +47,6 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-
         if event.type == pygame.KEYDOWN and not game_over and not game_won:
             if event.key == pygame.K_UP:
                 if player_pos[0] > 0:
